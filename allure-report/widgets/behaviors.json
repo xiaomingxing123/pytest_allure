@@ -1,0 +1,37 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "63b903d862dd36978142a5d2efd87b76",
+    "name" : "正常下单",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "e132066b8e8a4ae5e7f1b5e0f6cc2bf2",
+    "name" : "重复下单",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "966477860476a5558693864b51f6abd8",
+    "name" : "投保人异常校验",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

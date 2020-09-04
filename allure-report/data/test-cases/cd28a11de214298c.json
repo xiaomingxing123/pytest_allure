@@ -1,0 +1,208 @@
+{
+  "uid" : "cd28a11de214298c",
+  "name" : "test_xiaoyusan_xiadan_case",
+  "fullName" : "test_dir.test_duanxian.Testxaidan#test_xiaoyusan_xiadan_case",
+  "historyId" : "32f5036bd0e98cf1b9f6cf2e6b9b8143",
+  "time" : {
+    "start" : 1599200561731,
+    "stop" : 1599200564333,
+    "duration" : 2602
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心5守护保'\n  - 小雨伞贴心5守护保\n  + 小雨伞-乐享亚洲旅行意外险",
+  "statusTrace" : "self = <test_dir.test_duanxian.Testxaidan object at 0x0000021FB67AEE08>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"053216af800638755da27e6fd54fcf11\")>, base_url = 'http://beta.xinhulu.com/insurance/detail?id='\n\n    @allure.feature('正常下单')\n    def test_xiaoyusan_xiadan_case(self, browser, base_url):\n        page = XiaoyusanPage(browser)\n        with allure.step(\"step1：打开要测试的商品链接\"):\n            page.get(base_url + '111905')\n            sleep(2)\n>           assert browser.title == \"小雨伞贴心5守护保\"\nE           AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心5守护保'\nE             - 小雨伞贴心5守护保\nE             + 小雨伞-乐享亚洲旅行意外险\n\ntest_dir\\test_duanxian.py:22: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1599200504766,
+      "stop" : 1599200507094,
+      "duration" : 2328
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1599200504631,
+      "stop" : 1599200504766,
+      "duration" : 135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser_close",
+    "time" : {
+      "start" : 1599200507094,
+      "stop" : 1599200507094,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599200561731,
+      "stop" : 1599200561731,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心5守护保'\n  - 小雨伞贴心5守护保\n  + 小雨伞-乐享亚洲旅行意外险",
+    "statusTrace" : "self = <test_dir.test_duanxian.Testxaidan object at 0x0000021FB67AEE08>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"053216af800638755da27e6fd54fcf11\")>, base_url = 'http://beta.xinhulu.com/insurance/detail?id='\n\n    @allure.feature('正常下单')\n    def test_xiaoyusan_xiadan_case(self, browser, base_url):\n        page = XiaoyusanPage(browser)\n        with allure.step(\"step1：打开要测试的商品链接\"):\n            page.get(base_url + '111905')\n            sleep(2)\n>           assert browser.title == \"小雨伞贴心5守护保\"\nE           AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心5守护保'\nE             - 小雨伞贴心5守护保\nE             + 小雨伞-乐享亚洲旅行意外险\n\ntest_dir\\test_duanxian.py:22: AssertionError",
+    "steps" : [ {
+      "name" : "step1：打开要测试的商品链接",
+      "time" : {
+        "start" : 1599200561731,
+        "stop" : 1599200564333,
+        "duration" : 2602
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心5守护保'\n  - 小雨伞贴心5守护保\n  + 小雨伞-乐享亚洲旅行意外险\n",
+      "statusTrace" : "  File \"D:\\pyautoTest_xiaoyusan\\test_dir\\test_duanxian.py\", line 22, in test_xiaoyusan_xiadan_case\n    assert browser.title == \"小雨伞贴心5守护保\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    }, {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1599200564344,
+        "stop" : 1599200564641,
+        "duration" : 297
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "169e67abbbebc894",
+        "name" : "失败截图",
+        "source" : "169e67abbbebc894.png",
+        "type" : "image/png",
+        "size" : 53502
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser_close::0",
+    "time" : {
+      "start" : 1599200575428,
+      "stop" : 1599200577777,
+      "duration" : 2349
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "正常下单"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_dir"
+  }, {
+    "name" : "suite",
+    "value" : "test_duanxian"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testxaidan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-96POBLO"
+  }, {
+    "name" : "thread",
+    "value" : "19300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_dir.test_duanxian"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "49c07236501dffbf",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心5守护保'\n  - 小雨伞贴心5守护保\n  + 小雨伞-乐享亚洲旅行意外险",
+      "time" : {
+        "start" : 1599189668624,
+        "stop" : 1599189671203,
+        "duration" : 2579
+      }
+    }, {
+      "uid" : "6fe396e137070a02",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心守护保'\n  - 小雨伞贴心守护保\n  + 小雨伞-乐享亚洲旅行意外险",
+      "time" : {
+        "start" : 1599188903259,
+        "stop" : 1599188905809,
+        "duration" : 2550
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "cd28a11de214298c.json",
+  "parameterValues" : [ ]
+}

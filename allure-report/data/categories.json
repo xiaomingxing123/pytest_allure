@@ -1,0 +1,94 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '订单确认页' == '健康告知'\n  - 健康告知\n  + 订单确认页",
+      "children" : [ {
+        "name" : "test_changxian_xiadan_case",
+        "uid" : "ac05481c3f3ead22",
+        "parentUid" : "1267e4b20473adce8425adc269e0cb1b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200507104,
+          "stop" : 1599200561348,
+          "duration" : 54244
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1267e4b20473adce8425adc269e0cb1b"
+    }, {
+      "name" : "AssertionError: assert '小雨伞-乐享亚洲旅行意外险' == '小雨伞贴心5守护保'\n  - 小雨伞贴心5守护保\n  + 小雨伞-乐享亚洲旅行意外险",
+      "children" : [ {
+        "name" : "test_xiaoyusan_xiadan_case",
+        "uid" : "cd28a11de214298c",
+        "parentUid" : "79ed25dea6c011ef43079347a28b716d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200561731,
+          "stop" : 1599200564333,
+          "duration" : 2602
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "79ed25dea6c011ef43079347a28b716d"
+    }, {
+      "name" : "AssertionError: assert '错误' == '小雨伞贴心守护保'\n  - 小雨伞贴心守护保\n  + 错误",
+      "children" : [ {
+        "name" : "test_xiadan_abnormal01_case",
+        "uid" : "928a5d6c98295ab9",
+        "parentUid" : "af47bac662434b2a1cb7d183a43f61a6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200564644,
+          "stop" : 1599200566825,
+          "duration" : 2181
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_xiadan_abnormal02_case",
+        "uid" : "f7274a336c9e991",
+        "parentUid" : "af47bac662434b2a1cb7d183a43f61a6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200567134,
+          "stop" : 1599200569285,
+          "duration" : 2151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af47bac662434b2a1cb7d183a43f61a6"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <label data-v-507024ec=\"\" class=\"element-lattice\" style=\"border: 2px solid red;\">...</label> is not clickable at point (724, 859). Other element would receive the click: <a class=\"btn btn-pay skin-btn-bg\">...</a>\n  (Session info: chrome=76.0.3809.87)",
+      "children" : [ {
+        "name" : "test_hegui_case",
+        "uid" : "31ecf336c0b4e257",
+        "parentUid" : "6133bf8e048a8b6edfd7ae2ca551f4b1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1599200569602,
+          "stop" : 1599200575073,
+          "duration" : 5471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6133bf8e048a8b6edfd7ae2ca551f4b1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

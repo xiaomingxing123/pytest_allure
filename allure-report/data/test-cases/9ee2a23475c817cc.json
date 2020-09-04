@@ -1,0 +1,134 @@
+{
+  "uid" : "9ee2a23475c817cc",
+  "name" : "test_xiadan_abnormal01_case",
+  "fullName" : "test_dir.test_duanxian.Testxaidan_abnormal#test_xiadan_abnormal01_case",
+  "historyId" : "644f717fb47cd71184079af9a7b47f88",
+  "time" : {
+    "start" : 1599189671218,
+    "stop" : 1599189673561,
+    "duration" : 2343
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '错误' == '小雨伞贴心守护保'\n  - 小雨伞贴心守护保\n  + 错误",
+  "statusTrace" : "self = <test_dir.test_duanxian.Testxaidan_abnormal object at 0x00000134786FC448>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"c2bcf6b9116a6af625890cff5db60299\")>, base_url = 'http://beta.xinhulu.com/insurance/detail?id='\n\n    @allure.feature('重复下单')\n    # test01重复下单\n    def test_xiadan_abnormal01_case(self, browser, base_url):\n        page = XiaoyusanPage(browser)\n        page.get(base_url)\n        sleep(2)\n>       assert browser.title == \"小雨伞贴心守护保\"\nE       AssertionError: assert '错误' == '小雨伞贴心守护保'\nE         - 小雨伞贴心守护保\nE         + 错误\n\ntest_dir\\test_duanxian.py:77: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1599189612319,
+      "stop" : 1599189614511,
+      "duration" : 2192
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1599189612271,
+      "stop" : 1599189612319,
+      "duration" : 48
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser_close",
+    "time" : {
+      "start" : 1599189614511,
+      "stop" : 1599189614511,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599189671218,
+      "stop" : 1599189671218,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser_close::0",
+    "time" : {
+      "start" : 1599189681190,
+      "stop" : 1599189683451,
+      "duration" : 2261
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "重复下单"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_dir"
+  }, {
+    "name" : "suite",
+    "value" : "test_duanxian"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testxaidan_abnormal"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-96POBLO"
+  }, {
+    "name" : "thread",
+    "value" : "14208-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_dir.test_duanxian"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9ee2a23475c817cc.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,2 @@
+[33mWARNING [0m poium.page_objects:page_objects.py:277 Find 2 elements through：xpath=//*[text()= '30年']
+[33mWARNING [0m poium.page_objects:page_objects.py:277 Find 3 elements through：xpath=//*[text()= '非长期']

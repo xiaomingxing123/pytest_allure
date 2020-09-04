@@ -1,0 +1,51 @@
+[ {
+  "uid" : "cd28a11de214298c",
+  "name" : "test_xiaoyusan_xiadan_case",
+  "time" : {
+    "start" : 1599200561731,
+    "stop" : 1599200564333,
+    "duration" : 2602
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac05481c3f3ead22",
+  "name" : "test_changxian_xiadan_case",
+  "time" : {
+    "start" : 1599200507104,
+    "stop" : 1599200561348,
+    "duration" : 54244
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7274a336c9e991",
+  "name" : "test_xiadan_abnormal02_case",
+  "time" : {
+    "start" : 1599200567134,
+    "stop" : 1599200569285,
+    "duration" : 2151
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "928a5d6c98295ab9",
+  "name" : "test_xiadan_abnormal01_case",
+  "time" : {
+    "start" : 1599200564644,
+    "stop" : 1599200566825,
+    "duration" : 2181
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "31ecf336c0b4e257",
+  "name" : "test_hegui_case",
+  "time" : {
+    "start" : 1599200569602,
+    "stop" : 1599200575073,
+    "duration" : 5471
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

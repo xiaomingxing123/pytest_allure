@@ -1,0 +1,149 @@
+{
+  "uid" : "a197a334e363880c",
+  "name" : "test_changxian_xiadan_case",
+  "fullName" : "test_dir.test_changxian.Testxaidan#test_changxian_xiadan_case",
+  "historyId" : "8122ba7bdc38372231d692ad2b527545",
+  "time" : {
+    "start" : 1599189614513,
+    "stop" : 1599189668553,
+    "duration" : 54040
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '订单确认页' == '健康告知'\n  - 健康告知\n  + 订单确认页",
+  "statusTrace" : "self = <test_dir.test_changxian.Testxaidan object at 0x0000013477DE92C8>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"c2bcf6b9116a6af625890cff5db60299\")>, base_url = 'http://beta.xinhulu.com/insurance/detail?id='\n\n    def test_changxian_xiadan_case(self, browser, base_url):\n        page = XiaoyusanPage(browser)\n        page.get(base_url + '160356')\n        sleep(2)\n        assert browser.title == \"小雨伞擎天柱定期寿险2020\"\n        page.click_bug_sx.click()\n    \n        # 进入试算页\n        sleep(2)\n        assert browser.title == \"保费试算\"\n        # 输入被保人生日\n        page_set = Base(browser)\n        page_set.set_value('[data-key=\"insureds.birth\"]', info_deal.bbr_info[\"birthday\"])\n        # [110000, 110100, 110101] 地址代码\n        page_set.set_value('[data-key=\"insureds.residentAddr\"]', info_deal.bbr_info[\"address\"])\n        # 选择投保方案\n        page.plan_id.click()  # 选择保额\n        page_set.swipe_into(\"//*[text()='30年']\")\n        page.plan_Guarantee_time.click()  # 选择保障时间\n        page.plan_Pay_period.click()  # 选择交费年限\n        # 选择附加险\n        if page_set.isElementExist(\"//*[text()='附加被保险人豁免保险费']\"):\n            page.plan_ext_risk_bbrhm.click()\n        else:\n            print(\"未找到此附加险\")\n        page.click_bug_sx.click()\n        sleep(2)\n    \n        # 登录\n        assert browser.title == \"手机登录\"\n        page.phone_input_cx.send_keys(info_deal.user_info[\"user_phone\"])\n        page.security_input_cx.send_keys(info_deal.user_info[\"user_security\"])\n        page.login_click_cx.click()\n    \n        # 进入健告页\n        sleep(2)\n        assert browser.title == \"投保告知\"\n        if page_set.isElementExist(\"//*[@class= 'gold-dialog']\"):\n            page.accept_button.click()\n        else:\n            print(\"没在合规流程\")\n    \n        sleep(2)\n        page.healthy_yes.click()\n    \n        # 进入下单页\n        sleep(5)\n        # 输入投保人名字\n        if page_set.isElementExist(\"//*[@placeholder='请填写投保人姓名']\"):\n            page.tbr_name_input.send_keys(info_deal.tbr_info[\"tname\"])\n        else:\n            print(\"已有投保人名字信息\")\n        # 输入投保人证件号\n        if page_set.isElementExist(\"//*[@placeholder='请输入投保人证件号码']\"):\n            page.tbr_id_input.send_keys(info_deal.tbr_info[\"ID_number\"])\n        else:\n            print(\"已有投保人证件号码信息\")\n        # 输入投保人手机号\n        if page_set.isElementExist(\"//*[@placeholder='请填写投保人手机号']\"):\n            page.tbr_phone_num_input.send_keys(info_deal.tbr_info[\"mobile\"])\n        else:\n            print(\"已有投保人手机号码信息\")\n        # 输入投保人邮箱\n        if page_set.isElementExist(\"//*[@placeholder='请填写投保人邮箱']\"):\n            page.tbr_email_input.send_keys(info_deal.tbr_info[\"email\"])\n        else:\n            print(\"已有投保人邮箱信息\")\n        # 选择投保人证件有效期\n        if page_set.isElementExist(\"//*[text()='证件有效期']\"):\n            page.select_tbr_validity_type.click()\n            sleep(2)\n            page_set.set_value('[data-key=\"applicant.idValidEndTime\"]', info_deal.tbr_info[\"Effective_time\"])\n        else:\n            print(\"不需要选择证件有效止期\")\n        # 选择投保人职业\n        sleep(1)\n        page_set.set_value('[data-key=\"applicant.careerCode\"]', info_deal.tbr_info[\"careerCode\"])\n        # 输入投保人手机号码\n        sleep(1)\n        # 输入投保人长期居住地址\n        page_set.swipe_into(\"//*[text()='长期居住地']\")\n        page.residentDetail.clear()\n        page.residentDetail.send_keys(info_deal.tbr_info[\"residentDetail\"])\n        # 输入被保人身高体重信息\n        if page_set.isElementExist(\"//*[text()='身高(cm)']\"):\n            page.bbr_height.send_keys(info_deal.bbr_info_buy[\"height\"])\n            page.bbr_weight.send_keys(info_deal.bbr_info_buy[\"weight\"])\n        else:\n            print(\"没有被保人升高体重元素\")\n        # 输入续期银行卡信息\n        if page_set.isElementExist(\"//*[text()='续费银行账户']\"):\n            page_set.swipe_into(\"//*[text()='开户行支行']\")\n            page_set.set_value('[data-key=\"renewalBank.bank\"]', info_deal.bank_info[\"bank\"])\n            page.bankNo.clear()\n            page.bankNo.send_keys(info_deal.bank_info[\"bankNo\"])\n        else:\n            print(\"没有续期银行卡\")\n        page.click_bug.click()\n        # 进入订单确认页\n        sleep(10)\n>       assert browser.title == \"健康告知\"\nE       AssertionError: assert '订单确认页' == '健康告知'\nE         - 健康告知\nE         + 订单确认页\n\ntest_dir\\test_changxian.py:117: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1599189612319,
+      "stop" : 1599189614511,
+      "duration" : 2192
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599189614511,
+      "stop" : 1599189614511,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1599189612271,
+      "stop" : 1599189612319,
+      "duration" : 48
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser_close",
+    "time" : {
+      "start" : 1599189614511,
+      "stop" : 1599189614511,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '订单确认页' == '健康告知'\n  - 健康告知\n  + 订单确认页",
+    "statusTrace" : "self = <test_dir.test_changxian.Testxaidan object at 0x0000013477DE92C8>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"c2bcf6b9116a6af625890cff5db60299\")>, base_url = 'http://beta.xinhulu.com/insurance/detail?id='\n\n    def test_changxian_xiadan_case(self, browser, base_url):\n        page = XiaoyusanPage(browser)\n        page.get(base_url + '160356')\n        sleep(2)\n        assert browser.title == \"小雨伞擎天柱定期寿险2020\"\n        page.click_bug_sx.click()\n    \n        # 进入试算页\n        sleep(2)\n        assert browser.title == \"保费试算\"\n        # 输入被保人生日\n        page_set = Base(browser)\n        page_set.set_value('[data-key=\"insureds.birth\"]', info_deal.bbr_info[\"birthday\"])\n        # [110000, 110100, 110101] 地址代码\n        page_set.set_value('[data-key=\"insureds.residentAddr\"]', info_deal.bbr_info[\"address\"])\n        # 选择投保方案\n        page.plan_id.click()  # 选择保额\n        page_set.swipe_into(\"//*[text()='30年']\")\n        page.plan_Guarantee_time.click()  # 选择保障时间\n        page.plan_Pay_period.click()  # 选择交费年限\n        # 选择附加险\n        if page_set.isElementExist(\"//*[text()='附加被保险人豁免保险费']\"):\n            page.plan_ext_risk_bbrhm.click()\n        else:\n            print(\"未找到此附加险\")\n        page.click_bug_sx.click()\n        sleep(2)\n    \n        # 登录\n        assert browser.title == \"手机登录\"\n        page.phone_input_cx.send_keys(info_deal.user_info[\"user_phone\"])\n        page.security_input_cx.send_keys(info_deal.user_info[\"user_security\"])\n        page.login_click_cx.click()\n    \n        # 进入健告页\n        sleep(2)\n        assert browser.title == \"投保告知\"\n        if page_set.isElementExist(\"//*[@class= 'gold-dialog']\"):\n            page.accept_button.click()\n        else:\n            print(\"没在合规流程\")\n    \n        sleep(2)\n        page.healthy_yes.click()\n    \n        # 进入下单页\n        sleep(5)\n        # 输入投保人名字\n        if page_set.isElementExist(\"//*[@placeholder='请填写投保人姓名']\"):\n            page.tbr_name_input.send_keys(info_deal.tbr_info[\"tname\"])\n        else:\n            print(\"已有投保人名字信息\")\n        # 输入投保人证件号\n        if page_set.isElementExist(\"//*[@placeholder='请输入投保人证件号码']\"):\n            page.tbr_id_input.send_keys(info_deal.tbr_info[\"ID_number\"])\n        else:\n            print(\"已有投保人证件号码信息\")\n        # 输入投保人手机号\n        if page_set.isElementExist(\"//*[@placeholder='请填写投保人手机号']\"):\n            page.tbr_phone_num_input.send_keys(info_deal.tbr_info[\"mobile\"])\n        else:\n            print(\"已有投保人手机号码信息\")\n        # 输入投保人邮箱\n        if page_set.isElementExist(\"//*[@placeholder='请填写投保人邮箱']\"):\n            page.tbr_email_input.send_keys(info_deal.tbr_info[\"email\"])\n        else:\n            print(\"已有投保人邮箱信息\")\n        # 选择投保人证件有效期\n        if page_set.isElementExist(\"//*[text()='证件有效期']\"):\n            page.select_tbr_validity_type.click()\n            sleep(2)\n            page_set.set_value('[data-key=\"applicant.idValidEndTime\"]', info_deal.tbr_info[\"Effective_time\"])\n        else:\n            print(\"不需要选择证件有效止期\")\n        # 选择投保人职业\n        sleep(1)\n        page_set.set_value('[data-key=\"applicant.careerCode\"]', info_deal.tbr_info[\"careerCode\"])\n        # 输入投保人手机号码\n        sleep(1)\n        # 输入投保人长期居住地址\n        page_set.swipe_into(\"//*[text()='长期居住地']\")\n        page.residentDetail.clear()\n        page.residentDetail.send_keys(info_deal.tbr_info[\"residentDetail\"])\n        # 输入被保人身高体重信息\n        if page_set.isElementExist(\"//*[text()='身高(cm)']\"):\n            page.bbr_height.send_keys(info_deal.bbr_info_buy[\"height\"])\n            page.bbr_weight.send_keys(info_deal.bbr_info_buy[\"weight\"])\n        else:\n            print(\"没有被保人升高体重元素\")\n        # 输入续期银行卡信息\n        if page_set.isElementExist(\"//*[text()='续费银行账户']\"):\n            page_set.swipe_into(\"//*[text()='开户行支行']\")\n            page_set.set_value('[data-key=\"renewalBank.bank\"]', info_deal.bank_info[\"bank\"])\n            page.bankNo.clear()\n            page.bankNo.send_keys(info_deal.bank_info[\"bankNo\"])\n        else:\n            print(\"没有续期银行卡\")\n        page.click_bug.click()\n        # 进入订单确认页\n        sleep(10)\n>       assert browser.title == \"健康告知\"\nE       AssertionError: assert '订单确认页' == '健康告知'\nE         - 健康告知\nE         + 订单确认页\n\ntest_dir\\test_changxian.py:117: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "610f92beec7d3e51",
+      "name" : "log",
+      "source" : "610f92beec7d3e51.txt",
+      "type" : "text/plain",
+      "size" : 223
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser_close::0",
+    "time" : {
+      "start" : 1599189681190,
+      "stop" : 1599189683451,
+      "duration" : 2261
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_dir"
+  }, {
+    "name" : "suite",
+    "value" : "test_changxian"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testxaidan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-96POBLO"
+  }, {
+    "name" : "thread",
+    "value" : "14208-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_dir.test_changxian"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a197a334e363880c.json",
+  "parameterValues" : [ ]
+}

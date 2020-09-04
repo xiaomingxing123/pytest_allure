@@ -1,0 +1,102 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_dir",
+    "children" : [ {
+      "name" : "test_changxian",
+      "children" : [ {
+        "name" : "Testxaidan",
+        "children" : [ {
+          "name" : "test_changxian_xiadan_case",
+          "uid" : "ac05481c3f3ead22",
+          "parentUid" : "b457877b4627e9c1dac3c8d10b7b8921",
+          "status" : "failed",
+          "time" : {
+            "start" : 1599200507104,
+            "stop" : 1599200561348,
+            "duration" : 54244
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b457877b4627e9c1dac3c8d10b7b8921"
+      } ],
+      "uid" : "1b26b2a2a001051826d0ef991f615b74"
+    }, {
+      "name" : "test_duanxian",
+      "children" : [ {
+        "name" : "Testxaidan",
+        "children" : [ {
+          "name" : "test_xiaoyusan_xiadan_case",
+          "uid" : "cd28a11de214298c",
+          "parentUid" : "5ad0b6587cd4e83d7dc235a0f86d1c9d",
+          "status" : "failed",
+          "time" : {
+            "start" : 1599200561731,
+            "stop" : 1599200564333,
+            "duration" : 2602
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5ad0b6587cd4e83d7dc235a0f86d1c9d"
+      }, {
+        "name" : "Testxaidan_abnormal",
+        "children" : [ {
+          "name" : "test_xiadan_abnormal01_case",
+          "uid" : "928a5d6c98295ab9",
+          "parentUid" : "468214bd120d9e2bd49566aa06e2a335",
+          "status" : "failed",
+          "time" : {
+            "start" : 1599200564644,
+            "stop" : 1599200566825,
+            "duration" : 2181
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_xiadan_abnormal02_case",
+          "uid" : "f7274a336c9e991",
+          "parentUid" : "468214bd120d9e2bd49566aa06e2a335",
+          "status" : "failed",
+          "time" : {
+            "start" : 1599200567134,
+            "stop" : 1599200569285,
+            "duration" : 2151
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "468214bd120d9e2bd49566aa06e2a335"
+      } ],
+      "uid" : "c92a7e437601ddf3d83e0283000b53f5"
+    }, {
+      "name" : "test_hegui",
+      "children" : [ {
+        "name" : "Testxaidan",
+        "children" : [ {
+          "name" : "test_hegui_case",
+          "uid" : "31ecf336c0b4e257",
+          "parentUid" : "d2e8d814bf99d9fd2556341f1e626594",
+          "status" : "broken",
+          "time" : {
+            "start" : 1599200569602,
+            "stop" : 1599200575073,
+            "duration" : 5471
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d2e8d814bf99d9fd2556341f1e626594"
+      } ],
+      "uid" : "8d51843cc3c9d7c4ba63f470802af668"
+    } ],
+    "uid" : "0deb62a7421191a8a69ea1015ab6c56d"
+  } ]
+}

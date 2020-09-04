@@ -1,0 +1,191 @@
+{
+  "uid" : "928a5d6c98295ab9",
+  "name" : "test_xiadan_abnormal01_case",
+  "fullName" : "test_dir.test_duanxian.Testxaidan_abnormal#test_xiadan_abnormal01_case",
+  "historyId" : "644f717fb47cd71184079af9a7b47f88",
+  "time" : {
+    "start" : 1599200564644,
+    "stop" : 1599200566825,
+    "duration" : 2181
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '错误' == '小雨伞贴心守护保'\n  - 小雨伞贴心守护保\n  + 错误",
+  "statusTrace" : "self = <test_dir.test_duanxian.Testxaidan_abnormal object at 0x0000021FB5E64148>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"053216af800638755da27e6fd54fcf11\")>, base_url = 'http://beta.xinhulu.com/insurance/detail?id='\n\n    @allure.feature('重复下单')\n    # test01重复下单\n    def test_xiadan_abnormal01_case(self, browser, base_url):\n        page = XiaoyusanPage(browser)\n        page.get(base_url)\n        sleep(2)\n>       assert browser.title == \"小雨伞贴心守护保\"\nE       AssertionError: assert '错误' == '小雨伞贴心守护保'\nE         - 小雨伞贴心守护保\nE         + 错误\n\ntest_dir\\test_duanxian.py:77: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1599200504766,
+      "stop" : 1599200507094,
+      "duration" : 2328
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1599200504631,
+      "stop" : 1599200504766,
+      "duration" : 135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1599200564644,
+      "stop" : 1599200564644,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser_close",
+    "time" : {
+      "start" : 1599200507094,
+      "stop" : 1599200507094,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '错误' == '小雨伞贴心守护保'\n  - 小雨伞贴心守护保\n  + 错误",
+    "statusTrace" : "self = <test_dir.test_duanxian.Testxaidan_abnormal object at 0x0000021FB5E64148>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"053216af800638755da27e6fd54fcf11\")>, base_url = 'http://beta.xinhulu.com/insurance/detail?id='\n\n    @allure.feature('重复下单')\n    # test01重复下单\n    def test_xiadan_abnormal01_case(self, browser, base_url):\n        page = XiaoyusanPage(browser)\n        page.get(base_url)\n        sleep(2)\n>       assert browser.title == \"小雨伞贴心守护保\"\nE       AssertionError: assert '错误' == '小雨伞贴心守护保'\nE         - 小雨伞贴心守护保\nE         + 错误\n\ntest_dir\\test_duanxian.py:77: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1599200566835,
+        "stop" : 1599200567132,
+        "duration" : 297
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4dce0d82f579398f",
+        "name" : "失败截图",
+        "source" : "4dce0d82f579398f.png",
+        "type" : "image/png",
+        "size" : 11099
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser_close::0",
+    "time" : {
+      "start" : 1599200575428,
+      "stop" : 1599200577777,
+      "duration" : 2349
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "重复下单"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_dir"
+  }, {
+    "name" : "suite",
+    "value" : "test_duanxian"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testxaidan_abnormal"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-96POBLO"
+  }, {
+    "name" : "thread",
+    "value" : "19300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_dir.test_duanxian"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9ee2a23475c817cc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '错误' == '小雨伞贴心守护保'\n  - 小雨伞贴心守护保\n  + 错误",
+      "time" : {
+        "start" : 1599189671218,
+        "stop" : 1599189673561,
+        "duration" : 2343
+      }
+    }, {
+      "uid" : "b1ea85250561a947",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '错误' == '小雨伞贴心守护保'\n  - 小雨伞贴心守护保\n  + 错误",
+      "time" : {
+        "start" : 1599188906118,
+        "stop" : 1599188908328,
+        "duration" : 2210
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "928a5d6c98295ab9.json",
+  "parameterValues" : [ ]
+}

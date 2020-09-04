@@ -1,0 +1,86 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_dir",
+    "children" : [ {
+      "name" : "test_changxian",
+      "children" : [ {
+        "name" : "test_changxian_xiadan_case",
+        "uid" : "ac05481c3f3ead22",
+        "parentUid" : "1af8f757568689ba7eebfe70037cecf9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200507104,
+          "stop" : 1599200561348,
+          "duration" : 54244
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1af8f757568689ba7eebfe70037cecf9"
+    }, {
+      "name" : "test_duanxian",
+      "children" : [ {
+        "name" : "test_xiaoyusan_xiadan_case",
+        "uid" : "cd28a11de214298c",
+        "parentUid" : "da71266c0f32da1625b2249d0f2f9e27",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200561731,
+          "stop" : 1599200564333,
+          "duration" : 2602
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_xiadan_abnormal01_case",
+        "uid" : "928a5d6c98295ab9",
+        "parentUid" : "da71266c0f32da1625b2249d0f2f9e27",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200564644,
+          "stop" : 1599200566825,
+          "duration" : 2181
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_xiadan_abnormal02_case",
+        "uid" : "f7274a336c9e991",
+        "parentUid" : "da71266c0f32da1625b2249d0f2f9e27",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599200567134,
+          "stop" : 1599200569285,
+          "duration" : 2151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "da71266c0f32da1625b2249d0f2f9e27"
+    }, {
+      "name" : "test_hegui",
+      "children" : [ {
+        "name" : "test_hegui_case",
+        "uid" : "31ecf336c0b4e257",
+        "parentUid" : "24a1e3514cacdbdadf9039f9ce58da4d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1599200569602,
+          "stop" : 1599200575073,
+          "duration" : 5471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "24a1e3514cacdbdadf9039f9ce58da4d"
+    } ],
+    "uid" : "477e1699a815c4c655b94982520d230a"
+  } ]
+}

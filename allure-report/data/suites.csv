@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Fri Sep 04 14:22:49 CST 2020","Fri Sep 04 14:22:55 CST 2020","5471","test_dir","test_hegui","Testxaidan","","","test_hegui_case",""
+"failed","Fri Sep 04 14:21:47 CST 2020","Fri Sep 04 14:22:41 CST 2020","54244","test_dir","test_changxian","Testxaidan","","","test_changxian_xiadan_case",""
+"failed","Fri Sep 04 14:22:47 CST 2020","Fri Sep 04 14:22:49 CST 2020","2151","test_dir","test_duanxian","Testxaidan_abnormal","","","test_xiadan_abnormal02_case","投保人异常校验
+        "
+"failed","Fri Sep 04 14:22:44 CST 2020","Fri Sep 04 14:22:46 CST 2020","2181","test_dir","test_duanxian","Testxaidan_abnormal","","","test_xiadan_abnormal01_case",""
+"failed","Fri Sep 04 14:22:41 CST 2020","Fri Sep 04 14:22:44 CST 2020","2602","test_dir","test_duanxian","Testxaidan","","","test_xiaoyusan_xiadan_case",""

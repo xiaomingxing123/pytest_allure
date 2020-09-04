@@ -1,0 +1,82 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_changxian_xiadan_case",
+    "uid" : "ac05481c3f3ead22",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1599200507104,
+      "stop" : 1599200561348,
+      "duration" : 54244
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "正常下单",
+    "children" : [ {
+      "name" : "test_xiaoyusan_xiadan_case",
+      "uid" : "cd28a11de214298c",
+      "parentUid" : "63b903d862dd36978142a5d2efd87b76",
+      "status" : "failed",
+      "time" : {
+        "start" : 1599200561731,
+        "stop" : 1599200564333,
+        "duration" : 2602
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "63b903d862dd36978142a5d2efd87b76"
+  }, {
+    "name" : "重复下单",
+    "children" : [ {
+      "name" : "test_xiadan_abnormal01_case",
+      "uid" : "928a5d6c98295ab9",
+      "parentUid" : "e132066b8e8a4ae5e7f1b5e0f6cc2bf2",
+      "status" : "failed",
+      "time" : {
+        "start" : 1599200564644,
+        "stop" : 1599200566825,
+        "duration" : 2181
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e132066b8e8a4ae5e7f1b5e0f6cc2bf2"
+  }, {
+    "name" : "投保人异常校验",
+    "children" : [ {
+      "name" : "test_xiadan_abnormal02_case",
+      "uid" : "f7274a336c9e991",
+      "parentUid" : "966477860476a5558693864b51f6abd8",
+      "status" : "failed",
+      "time" : {
+        "start" : 1599200567134,
+        "stop" : 1599200569285,
+        "duration" : 2151
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "966477860476a5558693864b51f6abd8"
+  }, {
+    "name" : "test_hegui_case",
+    "uid" : "31ecf336c0b4e257",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1599200569602,
+      "stop" : 1599200575073,
+      "duration" : 5471
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}
